@@ -1,73 +1,218 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Bài tập tổng hợp</title>
-	<style type="text/css">
-		
-		.container {
-			margin: 20px;
-		}
-
-		.title {
-			font-size: 60px;
-			color:  #fff;
-			font-weight: bolder;
-			height: 200px;
-			line-height: 2;
-			width: 100vw;
-		}
-
-		.title img{
-			width: 100vw;
-			height: 200px;
-			position: relative;
-			z-index: -1000;
-		}
-
-		.title p {
-			position: absolute;
-			top: 0;
-			left: 3em;
-		}
-	</style>
-</head>
-<body>
-	<div class="contaier">
-		<div class="title" name="header">
-			<img src="./Images/bai-16-banner.png">
-			<p><span>Ai? </span><span style="font-size: 80%;">Cái gì? </span><span style="font-size: 60%;">Ở đâu? ...</span></p>
-		</div>
-		<div class="left">
-			<ul>
-				<li><a href="#">Tình yêu và gia đình</a></li>
-				<li><a href="#">Sức khỏe</a></li>
-				<li><a href="#">Du lịch</a></li>
-				<li><a href="#">Ẩm thực</a></li>
-				<li><a href="#">Âm nhạc</a></li>
-			</ul>
-		</div>
-		<div class="right">
-			<section>
-				<h5>Tình yêu và gia đình</h5>
+	<head>
+		<meta charset="utf-8">
+		<title>Bài tập tổng hợp</title>
+		<style type="text/css">
+			
+			.container {
+				margin: 20px;
+				border: 1px solid #000;
+			}
+			.title {
+				font-size: 60px;
+				color:  #fff;
+				font-weight: bolder;
+				height: 200px;
+				line-height: 2;
+			}
+			.title img{
+				width: 100%;
+				height: 200px;
+				position: relative;
+				z-index: -1000;
+			}
+			.title p {
+				position: absolute;
+				top: 0;
+				left: 3em;
+			}
+			.left {
+				float: left;
+				width: 25%;
+			}
+			.left ul {
+				padding: 0 auto;
+				line-height: 2;
+				list-style: circle;
+			}
+			.right {
+				float: right;
+				width: 75%;
+				box-sizing: border-box;
+				border: 1px solid #000;
+			}
+			.right ul {
+				padding-left: 0;
+				margin: 0;
+				position: relative;
+			}
+			.right ul a:last-child {
+				background-color: #e0e0d1;
+				display: block;
+				text-align: right;
+			}
+			.right ul li a {
+				text-decoration: none;
+				display: block;
+				font-weight: bold;
+				color: #008ae6;
+			}
+			.content > li {
+				height: 8em;
+				list-style: none;
+			}
+			.content > li:nth-child(even){
+				border-top: 1px solid #8a8a5c;
+			}
+			.content li img {
+				float: left;
+				padding: 2px;
+				margin-right: 10px;
+			}
+			h5 {
+				background-color:  #4d4dff;
+				color: #fff;
+				padding: 4px;
+				margin: 0;
+			}
+			.child {
+				position: absolute;
+				left: 2em;
+				padding-top: 20px;
+				list-style: disc;
+				float: left;
+				width: 65.2%;
+				box-sizing: border-box;
+			}
+			.picture {
+				float: right;
+				width: 30%;
+				position: relative;
+			}
+			.picture img {
+				position: absolute;
+				right: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="title" id="header">
+				<img src="./Images/bai-16-banner.png">
+				<p><span>Ai? </span><span style="font-size: 80%;">Cái gì? </span><span style="font-size: 60%;">Ở đâu? ...</span></p>
+			</div>
+			<div class="left">
 				<ul>
-					<li><a href="#">Trầu cau</a></li>
-					<li>
-						<img src="">
-						<p></p>
-					</li>
+					<li><a href="#">Tình yêu và gia đình</a></li>
+					<li><a href="#">Sức khỏe</a></li>
+					<li><a href="#">Du lịch</a></li>
+					<li><a href="#">Ẩm thực</a></li>
+					<li><a href="#">Âm nhạc</a></li>
 				</ul>
-				
-
-			</section>
-			<section>
-			</section>
-			<section>
-				<p></p>
-			</section>
-			<section></section>
-			<section></section>
+			</div>
+			<div class="right">
+				<section>
+					<h5>Tình yêu và gia đình</h5>
+					<ul class="content">
+						<li>
+							<a href="#">Trầu cau</a>
+							<img src="./Images/bai-04.jpg" width="11%;">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						</li>
+						<li>
+							<a href="#">Xây dựng hạnh phúc gia đình qua những bữa cơm hàng ngày</a>
+							<img src="./Images/bai-04.jpg" width="11%;">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Tình yêu và gia đình</h5>
+					<ul class="content">
+						<li>
+							<a href="#">Trầu cau</a>
+							<img src="./Images/bai-04.jpg" width="11%;">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						</li>
+						<li>
+							<a href="#">Xây dựng hạnh phúc gia đình qua những bữa cơm hàng ngày</a>
+							<img src="./Images/bai-04.jpg" width="11%;">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+						</li>
+						<a href="#header">Về đầu trang</a>
+					</ul>
+				</section>
+				<section>
+					<h5>Du lịch</h5>
+					<ul class="content">
+						<li>
+							<a href="">Các tour mới nhất</a>
+							<ul class="child">
+								<li>Côn Min - Đại Lý - Lệ Giang</li>
+								<li>Đến Macau xem casino</li>
+								<li>Về Cà mau ăn tôm</li>
+							</ul>
+						</li>
+						<li>
+							<a href="">Các tour mới nhất</a>
+							<ul class="child">
+								<li>Côn Min - Đại Lý - Lệ Giang</li>
+								<li>Đến Macau xem casino</li>
+								<li>Về Cà mau ăn tôm</li>
+							</ul>
+						</li>
+						<a href="#header">Về đầu trang</a>
+					</ul>
+				</section>
+				<section>
+					<h5>Ẩm thực</h5>
+					<ul class="content">
+						<li>
+							<ul class="child">
+								<li>Các món ngon trong tuần</li>
+								<li>Côn Min - Đại Lý - Lệ Giang</li>
+								<li>Đến Macau xem casino</li>
+								<li>Về Cà mau ăn tôm</li>
+							</ul>
+							<div class="picture">
+								<img src="./Images/bai-04.jpg" width="120em">
+							</div>
+							
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Âm nhạc</h5>
+					<ul class="content">
+						<li>
+							<a>Nhạc thiếu nhi</a>
+							<ul class="child">
+								
+								<li>Côn Min - Đại Lý - Lệ Giang</li>
+								<li>Đến Macau xem casino</li>
+								<li>Về Cà mau ăn tôm</li>
+							</ul>
+							<div class="picture">
+								<img src="./Images/bai-04.jpg" width="100em">
+							</div>
+						</li>
+						<li>
+							<a>Dân ca</a>
+							<ul class="child">
+								
+								<li>Côn Min - Đại Lý - Lệ Giang</li>
+								<li>Đến Macau xem casino</li>
+								<li>Về Cà mau ăn tôm</li>
+							</ul>
+							<div class="picture">
+								<img src="./Images/bai-04.jpg" width="100em">
+							</div>
+						</li>
+						<a href="#header">Về đầu trang</a>
+					</ul>
+				</section>
+			</div>
 		</div>
-	</div>
-</body>
+	</body>
 </html>
