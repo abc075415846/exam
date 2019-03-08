@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tạo bảng, trộn dòng và cột</title>
+		<style type="text/css">
+			
+			.container {
+				margin: 20px;
+			}
+			.container-header, .container-content {
+				display: flex;
+				border: 1px solid #ff3300;
+			}
+			.title {
+				flex-basis: 80%;
+				max-width: 70em;
+			}
+			h2,  h1, .logo {
+				margin: 0;
+				border-right: 0px;
+				line-height: 2.5;
+			}
+			h2 {
+				background-color: #ff3300;
+				color: #fff;
+				text-align: right;
+				height: 32%;
+				margin-bottom: 1.3em;
+				border-bottom: 1px solid #f30;
+			}
+			h1 {
+				color: #ff3300;
+				text-align: center;
+				height: 51%;
+				border-top: 1px solid #f30;
+				background-color: #ffb3b3;
+			}
+			.logo {
+				flex-basis: 10%;
+				flex-grow: 1;
+				border-left: 1px solid #f30;
+			}
+			.logo img {
+				padding: 10px;
+			}
+			.left {
+				flex-grow: 1;
+				flex-basis: 45%;
+				max-width: 35em;
+				border-right: 1px solid #f30;
+			}
+			.right {
+				flex-grow: 1;
+				flex-basis: 45%;
+				max-width: 35em;
+			}
+			
+			ul li p {
+				color: #f30;
+				font-weight: bolder;
+			}
+			ul > li{
+				list-style: none;
+			}
+			ul li p::before {
+				content: " ";
+				border: 1px solid #f30;
+				width: 15px;
+				padding-left: 7px;
+				padding-right: 7px;
+				margin-right: 20px;
+				box-sizing: border-box;
+			}
+			.child li{
+				list-style: disc;
+			}
+			ol li {
+				margin-bottom: 20px;
+			}
+			span {
+				font-weight: bolder;
+				font-style: italic;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="container-header">
+				<div class="title">
+					<h2>Công nghệ dầu gội dưỡng tóc mới</h2>
+					<h1>Tỏa sáng cùng DOUBLE RICH</h1>
+				</div>
+				<div class="logo">
+					<img src="./Images/bai-10.jpg" width="90%" align="right">
+				</div>
+			</div>
+			<div class="container-content">
+				<div class="left">
+					<ul style="padding-left: 20px;">
+						<li>
+							<p>Sản phẩm khuyến mãi: </p>
+							<ul class="child">
+								<li>Dầu gội Double Rich mới 200ml, 400ml có tem khuyến mãi</li>
+							</ul>
+						</li>
+						<li>
+							<p>Đối tương tham gia: </p>
+							<ul class="child">
+								<li>Áp dụng cho tất cả người tiêu dùng cuối cùng mua sản phẩm khuyến mãi</li>
+								<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul>
+						<li><p>Các thức nhận giải: </p>
+						<ol>
+							<li><span>Lorem Ipsum is: </span> simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</li>
+							<li><span>Lorem Ipsum is: </span> simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li>
+						</ol>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

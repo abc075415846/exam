@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bai 15</title>
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.content {
+			display: flex;
+		}
+		.left, .right, .container> h1 {
+			border: 3px solid #e0e0d1;
+			line-height: 1.5;
+		}
+		.container> h1{
+			text-align: center;
+			color: #fff;
+				background-color: #003399;
+		}
+		.left {
+			flex-basis: 22%;
+			height: 100vh;
+			flex-grow: 1;
+			position: relative;
+			background-color: #00ccff;
+		}
+		ul {
+			position: absolute;
+			left: 2.5em;
+			top: 2em;
+		}
+		ul li {
+			list-style-type: square;
+		}
+		.right {
+			flex-basis: 68%;
+			flex-grow: 1;
+			padding: 20px;
+		}
+		.right h1, p {
+			text-align: center;
+			line-height: 2;
+		}
+		.right p {
+			font-size: 20px;
+		}
+		.right h2 {
+			text-decoration: underline;
+			
+		}
+		.right #blod {
+			font-weight: bolder;
+			text-align: left;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Bài tập NGÔN NGỮ HTML</h1>
+			<div class="content">
+				<div class="left">
+					<ul>
+						<li><a href="#">Bài 01 - Các tag cơ bản</a></li>
+						<li><a href="#">Bài 02 - Các tag cơ bản, có định dạng</a></li>
+						<li><a href="#">Bài 03 - Định dạng trang web</a></li>
+						<li><a href="#">Bài 04 - Định dạng trang web (tt)</a></li>
+						<li><a href="#">Bài 05 - Các tag cơ bản</a></li>
+						<li><a href="#">Bài 06 - Các tag cơ bản</a></li>
+						<li><a href="#">Bài 07 - Các tag cơ bản</a></li>
+						<li><a href="#">Bài 08 - Các tag cơ bản</a></li>
+						<li><a href="#">Bài 09 - Các tag cơ bản</a></li>
+						<li><a href="#">Bài 10 - Các tag cơ bản</a></li>
+						<li><a href="#">Bài 11 - Các tag cơ bản</a></li>
+						<li><a href="#">Bài 12 - Các tag cơ bản</a></li>
+						<li><a href="#">Bài 13 - Các tag cơ bản</a></li>
+					</ul>
+				</div>
+				<div class="right">
+					<h1>Bài 01: Sử dụng các tag cơ bản</h1>
+					<h2>Yêu cầu</h2>
+					<p id="blod">Thiết kế trang web có nội dung như sau:</p>
+					<p>Lập trình Web<br/>
+						Chào mừng các bạn đến với ngôn ngữ HTML
+					</p>
+					
+				</div>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

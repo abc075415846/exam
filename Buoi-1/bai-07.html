@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Ký tự đặc biệt, chèn hình ảnh, tạo danh sách và liên kết
+		</title>
+		<style type="text/css">
+			
+			.container {
+				margin: 20px;
+				display: flex;
+			}
+			h2 {
+				text-align: center;
+				color: #f06;
+			}
+			.left-content {
+				flex-grow: 1;
+				flex-basis: 30%;
+			}
+			img {
+				background-position: center;
+				background-size: cover;
+			}
+			.right-content {
+				flex-basis: 60%;
+				max-width: 45em;
+				flex-grow: 1;
+			}
+			ol p {
+				background-color: #f06;
+				color: #fff;
+				width: 5em;
+				
+			}
+			#first-list li {
+				list-style: square;
+			}
+			
+			hr {
+				margin: 20px 0;
+			}
+			.right-content > p {
+				margin: 2em 0 0 4em;
+				background-color: #f2ccff;
+				color: #006;
+			}
+			.right-content p a {
+				text-transform: capitalize;
+				text-decoration: none;
+				border-bottom: 0.5px solid #00F;
+				color: #00F;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="-left-content">
+				<img src="./Images/bai-04.jpg">
+			</div>
+			
+			<div class="right-content">
+				<h2>Công ty Hoa tươi Nhân Ái</h2>
+				<ol>
+					<li>
+						<p>Giới thiệu</p>
+						<ul id="first-list">
+							<li>Thành lập ngày 25/05/2017</li>
+							<li>Chuyên cung cấp cái loại hoa tươi</li>
+							<li>Có trên 20 cửa hàng bán lẻ tại TP.HCM</li>
+							<li>Nhận kết giỏ hoa theo yêu cầu của khách hàng</li>
+						</ul>
+					</li>
+					<hr />
+					<li>
+						<p>Liên hệ</p>
+						<ul>
+							<li>Điện thoại: 84-08-8351056</li>
+							<li>Địa chỉ:<span style="padding-left: 1.65em; font-style: italic;">227 Nguyễn Văn Cừ, Quận 5, TP.HCM</span></li>
+						</ul>
+					</li>
+				</ol>
+				<p>&copy; Copyright <a href="">Trung tâm tin học - đại học khoa học tự nhiên tp.hcm</a></p>
+			</div>
+		</div>
+	</body>
+</html>

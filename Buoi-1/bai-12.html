@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tạo form và các điều khiển</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <style type="text/css">
+        h1{
+        text-align: center;
+        color: #009900;
+        }
+        .my-form {
+        display: flex;
+        justify-content: center;
+        }
+        table {
+        border: 1px solid #000;
+        width: 40em;
+        border-collapse: collapse;
+        color: #2db300;
+        background-color:  #d6f5d6;
+        }
+        table tr td{
+        padding: 8px;
+        border: 1px solid #000;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+        <form class="my-form">
+            <table id="table" method ="POST">
+                <tr>
+                    <td><label>Họ và tên</label></td>
+                    <td><input type="text" name="" style="width: 90%;"></td>
+                </tr>
+                <tr>
+                    <td><label>Địa chỉ</label></td>
+                    <td><input type="text" name="" style="width: 70%;"></td>
+                </tr>
+                <tr>
+                    <td><label>Điện thoại</label></td>
+                    <td><input type="text" name="" style="width: 50%;"></td>
+                </tr>
+                <tr>
+                    <td><label>Phái</label></td>
+                    <td>
+                        <input type="radio" name="rd-sex" value="">
+                        <label>Nam</label>
+                        <input type="radio" name="rd-sex" value="" checked>
+                        <label>Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Nghề nghiệp</label></td>
+                    <td><select>
+                        <option>Bác sĩ</option>
+                        <option>Kỹ sư </option>
+                        <option>Giáo viên</option>
+                        <option>Khách</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label>Chọn sản phẩm tham gia</label></td>
+                    <td>
+                        <select multiple="">
+                            <option>Kem đánh răng</option>
+                            <option>Bột giặt</option>
+                            <option>Dầu gội đầu</option>
+                            <option>Sữa tắm</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Số người dự đoán</label></td>
+                    <td><input type="text" name="" style="width: 30%;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><button type="button" class="btn-group" id="btn-submit">Đồng ý</button></td>
+                </tr>
+            </table>
+        </form>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        $('#btn-submit').click(function(event) {
+        var row = "<tr id='success'><td colspan='2' style='text-align: center; color: red'>Bạn đã đăng ký thành công!!!</td></tr>";
+        if($('#success').length === 0){
+        $('#table> tbody:last-child').append(row);
+        }else {
+        $('#success td').html('Nhấp cc');
+        }
+        });
+        });
+        </script>
+    </body>
+</html>

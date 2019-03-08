@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Tạo form và các điều khiển trên
+		form
+		</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<style type="text/css">
+			h2 {
+				text-align: center;
+				color: #c68c53;
+			}
+			
+			.form-login {
+				display: flex;
+				justify-content: center;
+				height: 200px;
+			}
+			table {
+				background-color: #66d9ff;
+				border-collapse: collapse;
+				}
+			table tr {
+				border: 1px solid #000;
+			}
+			table tr:not(#btn-login) td {
+				border-right: 1px solid #000;
+			}
+			table tr td{
+				padding: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Đăng nhập</h2>
+		<form class="form-login">
+			<table id="table">
+				<tr>
+					<td><label>Mã người dùng:</label></td>
+					<td><input type="text" name="user" id="user"></td>
+				</tr>
+				<tr>
+					<td><label>Mật khẩu:</label></td>
+					<td><input type="password" name="pass" id="pass"></td>
+				</tr>
+				<tr id ="btn-login">
+					<td></td>
+					<td><button type="button" id="btn-submit">Đồng ý</button></td>
+				</tr>
+			</table>
+		</form>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#btn-submit').click(function(event) {
+					var username = $('#user').val();
+					var row = "<tr id ='show-user'><td colspan='2' style='text-align: center; color: blue'>"+username+"</td></tr>";
+					if(username !== "" && $('#show-user').length === 0 ){
+						$('#table> tbody:last-child').append(row);
+						
+					}else{
+						$('#show-user td').html(username);
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
